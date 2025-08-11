@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Connect 4 — Futuristic (Chiranjith)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-left">
+      <h1>🎮 Connect 4 <span>Futuristic</span></h1>
+      <p class="byline">by <a href="https://github.com/Chiranjith18/Internpe" target="_blank">Chiranjith</a></p>
+    </div>
+    <nav class="header-links">
+         <a href="https://www.linkedin.com/in/chiranjith-dharma-s-616839290/" target="_blank">LinkedIn</a> 
+      <a href="https://github.com/Chiranjith18/Internpe" target="_blank">GitHub</a> 
+ 
+    </nav>
+  </header>
+
+  <!-- SETUP / CONTROLS -->
+  <section class="controls" id="setup">
+    <div class="control-row">
+      <label for="mode">Mode</label>
+      <select id="mode">
+        <option value="pvp">Player vs Player</option>
+        <option value="ai">Player vs AI</option>
+      </select>
+    </div>
+    <div class="control-row" id="difficulty-row" style="display:none;">
+      <label for="difficulty">AI Difficulty</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+    <div class="control-row actions">
+      <button id="start-btn">Start Game</button>
+      <button id="restart-btn" disabled>Restart</button>
+      <button id="undo-btn" title="Undo last move (works for PvP & PvAI)" disabled>Undo</button>
+    </div>
+  </section>
+
+  <!-- STATUS -->
+  <section class="status">
+    <div id="turn-indicator">Start a game to play</div>
+  </section>
+
+  <!-- BOARD -->
+  <main class="game-wrap">
+    <div id="board" class="board" aria-label="Connect 4 board"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 </p>
+    <p class="social-footer">
+      <a href="https://www.linkedin.com/in/chiranjith-dharma-s-616839290/" target="_blank">LinkedIn</a> •
+      <a href="https://github.com/Chiranjith18/Internpe" target="_blank">GitHub</a> •
+ 
+    </p>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
